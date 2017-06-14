@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="main.css" rel="stylesheet" type="text/css"/>
+  <script src="main.js" type="text/javascript"></script>
+</head>
+
+  <body>
+  
+    <header>
+    
+   Cisco SPA VoIP phone Provisioner
+   
+    </header>
+
+  <section>
+
+        IP:<input type="text" Placeholder= "Phone IP Address" id="ip" onclick="ClearingIP()"></br>
+    
+        URL:<input type="text" placeholder="Config URL" id="url" onclick="ClearingUrl()"><br>
+    
+       <input onclick="validateIP(ip.value)" type="button" value="Provision IP" ><br>
+
+        <input onclick="admin(ip.value)" type="button" value="Admin Portal" ><br>
+
+        <input onclick="reboot(ip.value)" type="button" value="Reboot" ><br>
+
+   </section>
+
+       <footer>
+       footer
+       </footer>
+       
+       
+   </body>
+   
+   
+</html>
