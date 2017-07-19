@@ -1,4 +1,3 @@
-
  window.onload = function () {
 
      var ip = document.getElementById('ip');
@@ -31,7 +30,7 @@
          } else {
              return true;
          }
-     }
+     };
 
      provision.onclick = function () {
          var lowercase = url.value.toLowerCase();
@@ -51,13 +50,13 @@
                  window.open("http://" + link)
              }
          }
-     }
+     };
      admin.onclick = function () {
          if (Validate()) {
              link = (ip.value) + "/admin/advanced"
              window.open("http://" + link)
          }
-     }
+     };
 
 
      reboot.onclick = function () {
@@ -67,4 +66,5 @@
              window.open("http://" + link)
          }
 
-     }
+     };
+ };
