@@ -2,38 +2,34 @@
 <html>
 
 <head>
-  <link href="main.css" rel="stylesheet" type="text/css"/>
-  <script src="main.js" type="text/javascript"></script>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script src="main.js" type="text/javascript"></script>
 </head>
 
-  <body>
-  
+<body>
+
     <header>
-    
-   Cisco SPA VoIP phone Provisioner
-   
+
+        Cisco SPA VoIP phone Provisioner
+
     </header>
 
-  <section>
+  <div>
 
-        IP:<input type="text" Placeholder= "Phone IP Address" id="ip" onclick="ClearingIP()"></br>
+        <input id="ip" type="text" Placeholder="Phone IP Address"></br>
+
+        <input id="url" type="text" placeholder="Config URL" ><br>
+
+        <input id="admin" type="button" value="Admin Portal"><br>
+
+        <input id="reboot" type="button" value="Reboot"><br>
+
+        <input id="provision" type="button" value="Provision Phone"><br>
+
     
-        URL:<input type="text" placeholder="Config URL" id="url" onclick="ClearingUrl()"><br>
-    
-       <input onclick="validateIP(ip.value)" type="button" value="Provision IP" ><br>
+</div>
 
-        <input onclick="admin(ip.value)" type="button" value="Admin Portal" ><br>
+</body>
 
-        <input onclick="reboot(ip.value)" type="button" value="Reboot" ><br>
 
-   </section>
-
-       <footer>
-       footer
-       </footer>
-       
-       
-   </body>
-   
-   
 </html>
